@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('/public/font/Poppins-Regular.ttf');
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth selection:bg-[#cce6ff];
+  }
+}

@@ -1,0 +1,5 @@
+# build output
+.next
+out
+
+node_modules
