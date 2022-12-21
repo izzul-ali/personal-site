@@ -63,7 +63,8 @@ export default function AboutContact() {
         >
           <p className="mb-7">
             For anything you want to ask, please contact me via the contact
-            below, I will answer with pleasure 🙌️
+            below, I will answer with pleasure
+            <span>🙌️</span>
           </p>
           <SocialMedia />
         </div>
