@@ -36,8 +36,8 @@ export default function AboutContact() {
             selected === 'about' ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
-          Hello👋️, my name is Izzul Maali. I am 17 years old. The first time I
-          learned a back-end programming language, I used{' '}
+          Hello<span>👋️</span>, my name is Izzul Maali. I am 17 years old. The
+          first time I learned a back-end programming language, I used{' '}
           <a href="https://go.dev/" target={'_blank'} className="underline">
             Golang
           </a>
