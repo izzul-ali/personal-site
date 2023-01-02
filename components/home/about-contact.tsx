@@ -30,7 +30,7 @@ export default function AboutContact() {
           Contact
         </h2>
       </div>
-      <div className="mt-6 relative text-center items-start text-lg pb-10">
+      <div className="mt-6 relative text-center items-start text-base pb-10 [&>p>a]:underline [&>p>a]:underline-offset-2">
         <p
           className={`leading-normal transition duration-500 tracking-wide ${
             selected === 'about' ? 'translate-x-0' : '-translate-x-full'
@@ -38,19 +38,15 @@ export default function AboutContact() {
         >
           Hello<span>👋️</span>, my name is Izzul Maali. I am 17 years old. The
           first time I learned a back-end programming language, I used{' '}
-          <a href="https://go.dev/" target={'_blank'} className="underline">
+          <a href="https://go.dev/" target={'_blank'}>
             Golang
           </a>
           , but now I focus on the front-end, mostly using{' '}
-          <a
-            href="https://reactjs.org/"
-            target={'_blank'}
-            className="underline"
-          >
+          <a href="https://reactjs.org/" target={'_blank'}>
             React.js
           </a>{' '}
           and{' '}
-          <a href="https://nextjs.org/" target={'_blank'} className="underline">
+          <a href="https://nextjs.org/" target={'_blank'}>
             Next.js
           </a>
           .
