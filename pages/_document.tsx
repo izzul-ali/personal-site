@@ -7,7 +7,12 @@ export default function Document() {
         <meta name="theme-color" content="#cce6ff" />
         <meta name="description" content="Izzul Maali's personal site" />
         <link rel="icon" type="image/x-icon" href="/icon.ico" />
-        <title>Izzul Maali</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />
