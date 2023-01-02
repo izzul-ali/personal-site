@@ -27,6 +27,7 @@ export default function projects() {
 
       <div className="flex justify-center mt-12">
         <button
+          aria-label="btn-see-more"
           onClick={() => setProjectRows((prev) => prev + defaultRows)}
           className={`underline underline-offset-2 text-cyan-500 ${
             projectRows > projectList.length ? 'hidden' : 'block'
