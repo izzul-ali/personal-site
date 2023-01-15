@@ -25,16 +25,22 @@ export default function projects() {
         ))}
       </div>
 
-      <div className="flex justify-center mt-12">
-        <button
-          aria-label="btn-see-more"
-          onClick={() => setProjectRows((prev) => prev + defaultRows)}
-          className={`underline underline-offset-2 text-cyan-500 ${
-            projectRows > projectList.length ? 'hidden' : 'block'
-          }`}
-        >
-          see more
-        </button>
+      <div className="flex justify-center mt-12 [&>button]:outline-none text-gray-700 text-sm">
+        {projectRows < projectList.length ? (
+          <button
+            onClick={() => setProjectRows((prev) => prev + defaultRows)}
+            className={`bg-gradient-to-r from-cyan-400/30 to-indigo-400/30 px-4 py-[3px] rounded hover:scale-105 duration-200`}
+          >
+            see more
+          </button>
+        ) : (
+          <button
+            onClick={() => setProjectRows(3)}
+            className={`bg-gradient-to-r from-cyan-400/30 to-indigo-400/30 px-4 py-[3px] rounded hover:scale-105 duration-200`}
+          >
+            show less
+          </button>
+        )}
       </div>
     </>
   )

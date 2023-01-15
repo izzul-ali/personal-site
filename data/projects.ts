@@ -2,11 +2,19 @@ import { Project } from '@/components/project-card'
 
 export const projectList: Project[] = [
   {
-    image: '/images/projects/relaxtimee-kasir.webp',
+    image: '/images/projects/admin-tkj.webp',
     title: 'Admin TKJ',
     description:
       'Web application for managing student databases at SMK Muhammadiyah 1 Sukoharjo.',
     tech: ['next', 'react', 'tailwind', 'typescript', 'golang', 'postgresql']
+  },
+  {
+    image: '/images/projects/e-commerce.webp',
+    title: 'E-Commerce',
+    description: 'simple ecommerce website built with next.js and zustand',
+    tech: ['next', 'react', 'tailwind', 'typescript'],
+    demoLink: 'https://e-commerce-izzul-ali.vercel.app/',
+    githubRepo: 'https://github.com/izzul-ali/e-commerce'
   },
   {
     image: '/images/projects/relaxtimee.webp',
