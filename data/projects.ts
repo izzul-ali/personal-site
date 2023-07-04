@@ -2,6 +2,14 @@ import { Project } from '@/components/project-card'
 
 export const projectList: Project[] = [
   {
+    image: '/images/projects/chat-app.webp',
+    title: 'Chat App',
+    githubRepo: 'https://github.com/izzul-ali/chat-app',
+    description:
+      'Built using NodeJs and Socket.io on the backend, and NextJs and Tailwind CSS on the frontend.',
+    tech: ['next', 'react', 'tailwind', 'nodejs', 'prisma', 'typescript']
+  },
+  {
     image: '/images/projects/admin-tkj.webp',
     title: 'Admin TKJ',
     description:
@@ -45,14 +53,6 @@ export const projectList: Project[] = [
     tech: ['react', 'tailwind', 'typescript'],
     githubRepo: 'https://github.com/izzul-ali/characters',
     demoLink: 'https://charactersapp.vercel.app/'
-  },
-  {
-    image: '/images/projects/lumera-clone.webp',
-    title: 'Lumera Clone',
-    description: 'inspired by a design I found on dribbble.com',
-    tech: ['vue', 'tailwind', 'typescript'],
-    githubRepo: 'https://github.com/izzul-ali/lumera',
-    demoLink: 'https://lumera.netlify.app/'
   },
   {
     image: '/images/projects/pokemon-galery.webp',
