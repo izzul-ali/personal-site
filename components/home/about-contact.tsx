@@ -36,7 +36,7 @@ export default function AboutContact() {
             selected === 'about' ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
-          Hello<span>👋️</span>, my name is Izzul Maali. I am 17 years old. The
+          Hello<span>👋️</span>, my name is Izzul Maali. I am 18 years old. The
           first time I learned a back-end programming language, I used{' '}
           <a href="https://go.dev/" target={'_blank'}>
             Golang
@@ -62,7 +62,7 @@ export default function AboutContact() {
             below, I will answer with pleasure
             <span>🙌️</span>
           </p>
-          <SocialMedia />
+          <SocialMedia contact />
         </div>
       </div>
     </div>
