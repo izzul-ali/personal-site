@@ -24,7 +24,8 @@ export default function ProjectCard({
       <img
         src={image}
         alt={title}
-        className="w-full h-fit sm:h-56 object-cover"
+        loading="lazy"
+        className="w-full h-48 sm:h-56 object-cover"
       />
 
       <div className="px-3 py-4 mt-3">
