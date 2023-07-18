@@ -2,7 +2,7 @@ import { AiOutlineGlobal } from 'react-icons/ai'
 import { FaGithub } from 'react-icons/fa'
 import GenerateIcon from '@/components/generate-icon'
 
-export type Project = {
+export interface Project {
   image: string
   title: string
   description: string
@@ -20,11 +20,16 @@ export default function ProjectCard({
   demoLink
 }: Project) {
   return (
-    <div className="relative rounded overflow-hidden shadow-md hover:shadow-lg bg-gradient-to-r from-cyan-400/20 to-indigo-400/20 hover:from-cyan-400/30 hover:to-indigo-400/30 duration-300 hover:scale-105">
-      <img src={image} alt={title} className="w-full h-fit sm:h-72" />
+    <div className="relative rounded overflow-hidden shadow-md hover:shadow-lg shadow-gray-300 bg-gradient-to-r from-cyan-400/20 to-indigo-400/20 hover:from-cyan-400/30 hover:to-indigo-400/30 duration-300 hover:scale-105">
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-fit sm:h-56 object-cover"
+      />
+
       <div className="px-3 py-4 mt-3">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-base tracking-wide mt-3 text-gray-600">
+        <h3 className="text-lg sm:text-xl font-semibold">{title}</h3>
+        <p className="text-sm tracking-wide mt-3 text-gray-600">
           {description}
         </p>
 
