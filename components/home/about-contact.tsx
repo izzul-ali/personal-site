@@ -8,13 +8,13 @@ export default function AboutContact() {
     <div className="mt-14 mb-24 flex flex-col w-full items-center justify-center overflow-x-hidden">
       <div className="w-40 h-40 bg-[url(/images/me.webp)] bg-cover bg-center shadow-md rounded-full"></div>
 
-      <div className="flex gap-x-1 justify-center w-full text-lg items-center mt-5 font-medium">
+      <div className="flex gap-x-1 justify-center w-full text-base sm:text-lg items-center mt-5 font-semibold">
         <h2
           onClick={() => setSelected('about')}
           className={`px-3 cursor-pointer transition duration-300 border-b-2 border-[#b3daff]  ${
             selected === 'about'
-              ? 'border-opacity-100'
-              : 'border-opacity-0 text-gray-600'
+              ? 'border-opacity-100 text-gray-700'
+              : 'border-opacity-0 text-gray-500'
           }`}
         >
           About
@@ -23,33 +23,24 @@ export default function AboutContact() {
           onClick={() => setSelected('contact')}
           className={`px-3 cursor-pointer transition duration-300 border-b-2 border-[#b3daff] ${
             selected === 'contact'
-              ? 'border-opacity-100'
-              : 'border-opacity-0 text-gray-600'
+              ? 'border-opacity-100 text-gray-700'
+              : 'border-opacity-0 text-gray-500'
           }`}
         >
           Contact
         </h2>
       </div>
-      <div className="mt-6 relative text-center items-start text-base pb-10 [&>p>a]:underline [&>p>a]:underline-offset-2">
+
+      <div className="mt-6 relative text-center items-start text-sm sm:text-base pb-10">
         <p
-          className={`leading-normal transition duration-500 tracking-wide ${
+          className={`leading-normal transition duration-500 tracking-wide text-gray-900 ${
             selected === 'about' ? 'translate-x-0' : '-translate-x-full'
           }`}
         >
-          Hello<span>👋️</span>, my name is Izzul Maali. I am 18 years old. The
-          first time I learned a back-end programming language, I used{' '}
-          <a href="https://go.dev/" target={'_blank'}>
-            Golang
-          </a>
-          , but now I focus on the front-end, mostly using{' '}
-          <a href="https://reactjs.org/" target={'_blank'}>
-            React.js
-          </a>{' '}
-          and{' '}
-          <a href="https://nextjs.org/" target={'_blank'}>
-            Next.js
-          </a>
-          .
+          Hello, I'm Izzul Ma'ali, a Web Developer focused on creating
+          interactive experiences on the web. I'm very interested in creating
+          new projects and working with various web tools like React, Next,
+          Tailwind, NodeJs, and TypeScript.
         </p>
 
         <div
