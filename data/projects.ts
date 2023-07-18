@@ -2,6 +2,23 @@ import { Project } from '@/components/project-card'
 
 export const projectList: Project[] = [
   {
+    image: '/images/projects/e-commerce.webp',
+    title: 'E-Commerce',
+    description: 'A simple ecommerce website built with next.js and zustand',
+    tech: ['next', 'react', 'tailwind', 'typescript'],
+    demoLink: 'https://e-commerce-izzul-ali.vercel.app/',
+    githubRepo: 'https://github.com/izzul-ali/e-commerce'
+  },
+  {
+    image: '/images/projects/quiz-app.webp',
+    title: 'Quiz App',
+    description:
+      'Fullstack Quiz App created with NextJs, PrismaJs and other web libraries.',
+    tech: ['next', 'react', 'tailwind', 'prisma', 'typescript'],
+    githubRepo: 'https://github.com/izzul-ali/quiz-app',
+    demoLink: 'https://quizapp-demo.vercel.app'
+  },
+  {
     image: '/images/projects/chat-app.webp',
     title: 'Chat App',
     githubRepo: 'https://github.com/izzul-ali/chat-app',
@@ -16,14 +33,7 @@ export const projectList: Project[] = [
       'Web application for managing student databases at SMK Muhammadiyah 1 Sukoharjo.',
     tech: ['next', 'react', 'tailwind', 'typescript', 'golang', 'postgresql']
   },
-  {
-    image: '/images/projects/e-commerce.webp',
-    title: 'E-Commerce',
-    description: 'simple ecommerce website built with next.js and zustand',
-    tech: ['next', 'react', 'tailwind', 'typescript'],
-    demoLink: 'https://e-commerce-izzul-ali.vercel.app/',
-    githubRepo: 'https://github.com/izzul-ali/e-commerce'
-  },
+
   {
     image: '/images/projects/relaxtimee.webp',
     title: 'Relaxtimee Startup',
