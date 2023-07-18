@@ -37,7 +37,7 @@ export default function projects() {
           </button>
         ) : (
           <button
-            onClick={() => setProjectRows(3)}
+            onClick={() => setProjectRows(defaultRows)}
             className={`bg-gradient-to-r from-cyan-400/30 to-indigo-400/30 px-4 py-[3px] rounded hover:scale-105 duration-200`}
           >
             show less
