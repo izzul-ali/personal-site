@@ -6,7 +6,7 @@ export default function Header() {
       <div className="flex justify-between items-center gap-x-3">
         <h1 className="text-xl font-semibold">
           <span>👋️ </span>
-          Izzul Maali
+          Izzul Ma'ali
         </h1>
         <div className="flex items-center gap-x-3">
           <a href="https://github.com/izzul-ali" target={'_blank'}>
