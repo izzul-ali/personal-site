@@ -10,6 +10,7 @@ export default function GenerateIcon(name: string) {
   if (name === 'nodejs') {
     return (
       <svg
+        key={name}
         fill="green"
         viewBox="0 0 448 512"
         height="27"
@@ -24,6 +25,7 @@ export default function GenerateIcon(name: string) {
   if (name === 'prisma') {
     return (
       <svg
+        key={name}
         fill="currentColor"
         role="img"
         viewBox="0 0 24 24"
