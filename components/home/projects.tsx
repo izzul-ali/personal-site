@@ -2,16 +2,18 @@ import ProjectCard from '@/components/project-card'
 import { projectList } from '@/data/projects'
 import { useState } from 'react'
 
-const defaultRows = 3
+const defaultRows = 4
 
 export default function projects() {
   const [projectRows, setProjectRows] = useState<number>(defaultRows)
 
   return (
     <>
-      <h2 className="text-3xl font-bold mb-6">Projects</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-6 border-b-2 w-fit border-[#b3daff] ">
+        Projects
+      </h2>
 
-      <div className="flex flex-col gap-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-4">
         {projectList.slice(0, projectRows).map((v) => (
           <ProjectCard
             key={v.title}
