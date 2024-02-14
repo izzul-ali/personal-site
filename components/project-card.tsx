@@ -1,5 +1,5 @@
 import { AiOutlineGlobal } from 'react-icons/ai'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaYoutube } from 'react-icons/fa'
 import GenerateIcon from '@/components/generate-icon'
 
 export interface Project {
@@ -9,6 +9,7 @@ export interface Project {
   tech: string[]
   githubRepo?: string
   demoLink?: string
+  youtubeVideo?: string
 }
 
 export default function ProjectCard({
@@ -17,7 +18,8 @@ export default function ProjectCard({
   description,
   tech,
   githubRepo,
-  demoLink
+  demoLink,
+  youtubeVideo
 }: Project) {
   return (
     <div className="relative rounded overflow-hidden shadow-md hover:shadow-lg shadow-gray-300 bg-gradient-to-r from-cyan-400/20 to-indigo-400/20 hover:from-cyan-400/30 hover:to-indigo-400/30 duration-300 hover:scale-105">
@@ -39,11 +41,21 @@ export default function ProjectCard({
         </div>
 
         <div className="flex items-center gap-x-3 mt-7">
+          {youtubeVideo && (
+            <a
+              href={youtubeVideo}
+              target={'_blank'}
+              className="inline-flex items-center gap-x-1 w-fit px-1 hover:underline"
+            >
+              <FaYoutube />
+              Youtube
+            </a>
+          )}
           {githubRepo && (
             <a
               href={githubRepo}
               target={'_blank'}
-              className="inline-flex items-center gap-x-1 w-fit px-1"
+              className="inline-flex items-center gap-x-1 w-fit px-1 hover:underline"
             >
               <FaGithub />
               code
@@ -53,7 +65,7 @@ export default function ProjectCard({
             <a
               href={demoLink}
               target={'_blank'}
-              className="inline-flex gap-x-1 items-center w-fit px-1"
+              className="inline-flex gap-x-1 items-center w-fit px-1 hover:underline"
             >
               <AiOutlineGlobal />
               visit

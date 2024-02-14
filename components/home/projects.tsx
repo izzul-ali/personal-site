@@ -13,7 +13,7 @@ export default function projects() {
         Projects
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4">
         {projectList.slice(0, projectRows).map((v) => (
           <ProjectCard
             key={v.title}
@@ -21,6 +21,7 @@ export default function projects() {
             title={v.title}
             description={v.description}
             tech={v.tech}
+            youtubeVideo={v.youtubeVideo}
             githubRepo={v.githubRepo}
             demoLink={v.demoLink}
           />
