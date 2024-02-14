@@ -1,4 +1,4 @@
-import { FaDiscord, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTelegram, FaYoutube } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
 export default function SocialMedia({ contact }: { contact: boolean }) {
@@ -9,19 +9,19 @@ export default function SocialMedia({ contact }: { contact: boolean }) {
       </a>
       {!contact && (
         <>
-          <a href="https://github.com/izzul-ali" target={'_blank'}>
-            <FaGithub className="w-8 p-1 h-fit rounded-full bg-white shadow-lg" />
+          <a href="www.youtube.com/@izzuldev" target={'_blank'}>
+            <FaYoutube className="w-8 p-1 h-fit rounded-full bg-white shadow-lg" />
           </a>
           <a href="https://www.linkedin.com/in/izzul-maali" target={'_blank'}>
             <FaLinkedin className="w-8 p-1 h-fit rounded-full bg-white shadow-lg" />
+          </a>
+          <a href="https://github.com/izzul-ali" target={'_blank'}>
+            <FaGithub className="w-8 p-1 h-fit rounded-full bg-white shadow-lg" />
           </a>
         </>
       )}
       <a href="https://t.me/izzul30" target={'_blank'}>
         <FaTelegram className="w-8 p-1 h-fit rounded-full bg-white shadow-lg" />
-      </a>
-      <a href="https://discordapp.com/users/izzul_#9106" target={'_blank'}>
-        <FaDiscord className="w-8 p-1 h-fit rounded-full bg-white shadow-lg" />
       </a>
     </div>
   )
