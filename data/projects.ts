@@ -2,6 +2,15 @@ import { Project } from '@/components/project-card'
 
 export const projectList: Project[] = [
   {
+    image: '/images/projects/doctor-appointment.webp',
+    title: 'Flutter UI - Doctor Appointment',
+    description:
+      "UI display of a doctor's appointment application made with Flutter",
+    tech: ['flutter'],
+    githubRepo: 'https://github.com/izzul-ali/flutter-ui/tree/main/medical_app',
+    youtubeVideo: 'https://youtu.be/1O1Y05zcjwM'
+  },
+  {
     image: '/images/projects/e-commerce.webp',
     title: 'E-Commerce',
     description: 'A simple ecommerce website built with next.js and zustand',
@@ -54,15 +63,6 @@ export const projectList: Project[] = [
     tech: ['vue', 'tailwind', 'typescript'],
     githubRepo: 'https://github.com/izzul-ali/vesperr-app',
     demoLink: 'http://vesperr-clone.vercel.app/'
-  },
-  {
-    image: '/images/projects/rick&morty.webp',
-    title: 'Rick&Morty Characters',
-    description:
-      'collection of Rick and Morty cartoon characters, taken from the rickandmortyapi.com API.',
-    tech: ['react', 'tailwind', 'typescript'],
-    githubRepo: 'https://github.com/izzul-ali/characters',
-    demoLink: 'https://charactersapp.vercel.app/'
   },
   {
     image: '/images/projects/pokemon-galery.webp',
