@@ -2,6 +2,14 @@ import { Project } from '@/components/project-card'
 
 export const projectList: Project[] = [
   {
+    image: '/images/projects/fchat.webp',
+    title: 'Flutter - Chat App',
+    description:
+      'Chat application created using Flutter, Riverpod, and Firebase',
+    tech: ['flutter', 'firebase'],
+    githubRepo: 'https://github.com/izzul-ali/flutter-chat-app'
+  },
+  {
     image: '/images/projects/doctor-appointment.webp',
     title: 'Flutter UI - Doctor Appointment',
     description:
